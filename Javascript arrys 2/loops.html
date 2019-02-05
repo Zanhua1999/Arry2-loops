@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Loops</title>
+  </head>
+  <body>
+    <p id="meme"></p>
+    <script>
+    let x,y,text="";
+
+    function num(num) { return num % 2;}
+
+    for (x=1; x <=6; x++) {
+      for (y=1; y < x; y++) {
+        if (num(y)) {
+          text = text +"&#128512";
+        } else {
+          text = text + "&#x1F479";
+        }
+      }
+      document.getElementById('meme').innerHTML += text + "<br>";
+      text='';
+    }
+
+    </script>
+<a href="index.html">arry 2 deel 1</a>
+  </body>
+</html>
